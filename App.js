@@ -1,10 +1,20 @@
+import {useState} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button} from 'react-native';
 
 export default function App() {
+
+  const [outputText, setOutputText] = useState('Hello world xd'); 
+  const [mensajeInicial, setMensajeInicial] = useState(true);
+  const toggleText = () => {
+    mensajeInicial ? setOutputText("Hello world xd") : setOutputText("hasta sipre churry");
+    setMensajeInicial(!mensajeInicial);
+  }
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={{color: "white"}}>{outputText}</Text>
+      <Button title="Cambiar saludo" onPress={() => toggleText()} />
       <StatusBar style="auto" />
     </View>
   );
@@ -13,7 +23,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ccc',
     alignItems: 'center',
     justifyContent: 'center',
   },
