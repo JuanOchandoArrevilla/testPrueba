@@ -16,7 +16,10 @@ export default function App() {
       <Text style={{color: "white"}}>{outputText}</Text>
       <Button title="Cambiar saludo" onPress={() => toggleText()} />
       <StatusBar style="auto" />
+      <Text>soy juan ochando window</Text>
+
     </View>
+    
   );
 }
 
