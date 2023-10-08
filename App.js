@@ -20,6 +20,8 @@ export default function App() {
       <Text >soy thibaut de linux</Text>
       <Text>soy juan ochando window</Text>
       <Text>soy rober</Text>
+      <Text>soy juan ochando desde el fork</Text>
+
     </View>
     
   );
