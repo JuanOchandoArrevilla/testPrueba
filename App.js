@@ -35,3 +35,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+function name(params) {
+  console.log(params);
+  
+}
